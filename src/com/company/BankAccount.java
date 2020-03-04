@@ -20,9 +20,9 @@ public class BankAccount {
             throw new LimitException("Недостаточно средств на балансе. Остаток средств на балансе    ", getAmount());
         } else {
             System.out.println(amount = amount - sum);
-            if (getAmount() < sum) {
-                System.out.println(amount = amount - amount);
-            }
+        }
+        if (getAmount() < sum) {
+            System.out.println(amount = amount - amount);
         }
     }
 }
