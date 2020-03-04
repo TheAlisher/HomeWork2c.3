@@ -17,7 +17,9 @@ public class BankAccount {
 
     public void withDraw(int sum) throws LimitException {
         if (getAmount() < sum) {
-            System.out.println("Остаток на кошелке: " + (amount = amount - amount));
+            System.out.println("Вы можете снять только: "  + amount);
+            amount = amount - amount;
+            System.out.println("Остаток на кошелке: " + amount);
             throw new LimitException("Недостаточно средств на балансе. Остаток средств на балансе    ", getAmount());
         } else {
             System.out.println("Снято со кошелка: " + sum);
