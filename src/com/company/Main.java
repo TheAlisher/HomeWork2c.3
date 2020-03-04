@@ -10,6 +10,7 @@ public class Main {
             try {
                 person1.withDraw(6000);
             } catch (LimitException LE) {
+
                 System.out.println(LE.getMessage());
                 break;
             }
