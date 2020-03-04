@@ -9,11 +9,6 @@ public class LimitException extends Exception {
         this.remainingAmount = remainingAmount;
     }
 
-    @Override
-    public String getMessage() {
-        return super.getMessage();
-    }
-
     public double getRemainingAmount() {
         return remainingAmount;
     }
